@@ -5,8 +5,8 @@ import { normalize } from './normalize';
  * @param {Array} [zones=[]]
  * @param {number} [total]
  * @param {object} [options={}]
- * @param {number} [options.from=Number.MIN_VALUE]
- * @param {number} [options.to=Number.MAX_VALUE]
+ * @param {number} [options.from=Number.NEGATIVE_INFINITY] Specify min value of a zone
+ * @param {number} [options.to=Number.POSITIVE_INFINITY] Specify max value of a zone
  */
 
 export function zonesWithPoints(zones, numberOfPoints, options = {}) {

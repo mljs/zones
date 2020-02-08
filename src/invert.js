@@ -4,8 +4,8 @@ import { normalize } from './normalize';
  * Convert an array of exclusions and keep only from / to
  * @param {Array} [exclusions=[]]
  * @param {object} [options={}]
- * @param {number} [options.from=Number.MIN_VALUE]
- * @param {number} [options.to=Number.MAX_VALUE]
+ * @param {number} [options.from=Number.NEGATIVE_INFINITY] Specify min value of zones (after inversion)
+ * @param {number} [options.to=Number.POSITIVE_INFINITY] Specify max value of zones (after inversion)
  */
 
 export function invert(exclusions = [], options = {}) {

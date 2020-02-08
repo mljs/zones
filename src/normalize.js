@@ -4,8 +4,8 @@
  * - merge overlapping zones
  * @param {Array} [zones=[]]
  * @param {object} [options={}]
- * @param {number} [options.from=Number.MIN_VALUE]
- * @param {number} [options.to=Number.MAX_VALUE]
+ * @param {number} [options.from=Number.NEGATIVE_INFINITY] Specify min value of a zone
+ * @param {number} [options.to=Number.POSITIVE_INFINITY] Specify max value of a zone
  */
 
 export function normalize(zones = [], options = {}) {
