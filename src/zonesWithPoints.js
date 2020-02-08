@@ -3,7 +3,7 @@ import { normalize } from './normalize';
 /**
  * Add the number of points per zone to reach a specified total
  * @param {Array} [zones=[]]
- * @param {number} [total]
+ * @param {number} [numberOfPoints] Total number of points to distribute between zones
  * @param {object} [options={}]
  * @param {number} [options.from=Number.NEGATIVE_INFINITY] Specify min value of a zone
  * @param {number} [options.to=Number.POSITIVE_INFINITY] Specify max value of a zone
