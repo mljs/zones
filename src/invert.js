@@ -2,7 +2,7 @@ import { normalize } from './normalize';
 
 /**
  * Convert an array of exclusions and keep only from / to
- * @param {object} [exclusions=[]]
+ * @param {Array} [exclusions=[]]
  * @param {object} [options={}]
  * @param {number} [options.from=Number.MIN_VALUE]
  * @param {number} [options.to=Number.MAX_VALUE]

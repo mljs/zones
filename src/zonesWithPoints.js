@@ -2,7 +2,7 @@ import { normalize } from './normalize';
 
 /**
  * Add the number of points per zone to reach a specified total
- * @param {object} [zones=[]]
+ * @param {Array} [zones=[]]
  * @param {number} [total]
  * @param {object} [options={}]
  * @param {number} [options.from=Number.MIN_VALUE]
