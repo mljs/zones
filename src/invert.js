@@ -2,6 +2,8 @@ import { normalize } from './normalize';
 
 /**
  * Convert an array of exclusions and keep only from / to
+ *
+ * The method will always check if from if lower than to and will swap if required.
  * @param {Array} [exclusions=[]]
  * @param {object} [options={}]
  * @param {number} [options.from=Number.NEGATIVE_INFINITY] Specify min value of zones (after inversion)
@@ -13,6 +15,8 @@ export function invert(exclusions = [], options = {}) {
     from = Number.NEGATIVE_INFINITY,
     to = Number.POSITIVE_INFINITY,
   } = options;
+  if (from > to) [from, to] = [to, from];
+
   exclusions = normalize(exclusions, { from, to });
   if (exclusions.length === 0) return [{ from, to }];
 

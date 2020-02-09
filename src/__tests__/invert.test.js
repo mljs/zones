@@ -47,6 +47,12 @@ describe('invert', function() {
     expect(result).toStrictEqual([{ from: 0, to: 5 }]);
   });
 
+  it('exclusions 5 to 15, from:10, to:0', () => {
+    let exclusions = [{ from: 10, to: 5 }];
+    let result = invert(exclusions, { from: 10, to: 0 });
+    expect(result).toStrictEqual([{ from: 0, to: 5 }]);
+  });
+
   it('exclusions 1 to 2 and 5 to 15, from:0, to:10', () => {
     let exclusions = [
       { from: 1, to: 2 },
