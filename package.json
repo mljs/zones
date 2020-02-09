@@ -1,6 +1,6 @@
 {
   "name": "ml-zones",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Deal with zones",
   "main": "lib/index.js",
   "module": "src/index.js",
